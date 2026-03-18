@@ -1,0 +1,213 @@
+@use "fonts" as *;
+@use "sass:color";
+@use "breakpoints" as bp;
+
+$containerWidth: 80vw;
+
+:root {
+    --sloganHeight: 9vmax;
+
+    @include bp.media-up("Small") {
+        --sloganHeight: 12vmin;
+    }
+}
+
+.anniversary {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    user-select: none;
+    box-sizing: border-box;
+    //opacity: 0;
+    //display: none;
+    z-index: 10;
+
+    &--womanDay26 {
+        display: block;
+        background-color: var(--third) !important;
+        //background-color: #d287a0 !important;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    &__container {
+        width: $containerWidth;
+        height: 50vh;
+        //height: $containerHeight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 20vh;
+        left: 10vw;
+        // transform: translate(-50%, -50%);
+        //border-left: 0.05rem dashed rgba(#646cff, 70%);
+        //border-right: 0.05rem dashed rgba(#646cff, 70%);
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    @include bp.media-up("Small") {
+
+        &__container {
+            width: 90vmin;
+            left: 5vmin;
+            bottom: 13vmax;
+        }
+    }
+}
+
+#womanDay26 {
+
+    &Back {
+        // width: calc(#{$containerWidth} + 50vmin);
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 0;
+        // opacity: 0.5;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            object-position: bottom center;
+            object-fit: cover;
+        }
+    }
+
+    &Slogan {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        z-index: 10;
+
+        &_1 {
+            width: auto;
+            // height: calc(#{var(--sloganHeight)} - 2.1vmax);
+            position: absolute;
+            bottom: 0;
+            font-family: "Manrope ExtraLight" !important;
+            color: var(--fourth) !important;
+            text-decoration: none;
+            font-size: calc(var(--font-size-base) + 3.5vmax) !important;
+            border-bottom: none;
+            margin-bottom: 2rem !important;
+        }
+
+        // &_2 {
+        //     width: auto;
+        //     height: calc(#{var(--sloganHeight)} - 2vmax);
+        //     position: absolute;
+        //     bottom: calc(#{var(--sloganHeight)} / 2.3);
+        // }
+
+        // &_3 {
+        //     width: auto;
+        //     height: var(--sloganHeight);
+        //     position: absolute;
+        //     bottom: 0;
+        // }
+    }
+
+    &Baloon {
+        // width: 100%;
+        height: 75vmin;
+        display: block;
+        position: absolute;
+        top: 3vmin;
+        right: 25vmin;
+        overflow: hidden;
+        z-index: 5;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            object-position: center;
+            object-fit: contain;
+        }
+    }
+
+    @include bp.media-up("XXLarge") {
+        #womanDay26 {
+
+            &Baloon {
+                right: 30vmin;
+            }
+        }
+    }
+
+    @include bp.media-up("XLarge") {
+        #womanDay26 {
+
+            &Baloon {
+                right: 25vmin;
+            }
+        }
+    }
+
+    @include bp.media-up("Large") {
+        #womanDay26 {
+
+            &Baloon {
+                right: 16vmin;
+            }
+        }
+    }
+
+    @include bp.media-up("Medium") {
+        #womanDay26 {
+
+            &Baloon {
+                right: 22vmin;
+            }
+
+            &Slogan {
+                &_1 {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @include bp.media-up("Small") {
+        #womanDay26 {
+
+            &Baloon {
+                height: 90vmin;
+                top: 15vmin;
+                right: 16vmin;
+            }
+
+            &Slogan {
+                &_1 {
+                    // height: calc(#{var(--sloganHeight)} - 1.9vmin);
+                    width: 100%;
+                    text-align: center;
+                }
+
+                // &_2 {
+                //     height: calc(#{var(--sloganHeight)} - 1.8vmin);
+                // }
+            }
+        }
+    }
+
+}
