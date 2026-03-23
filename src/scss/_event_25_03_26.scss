@@ -2,10 +2,25 @@
 @use "sass:color";
 @use "breakpoints" as bp;
 
-$containerWidth: 80vw;
-
 :root {
     --sloganHeight: 9vmax;
+    --containerWidth: 76rem;
+
+    @include bp.media-up("XXXLarge") {
+        --containerWidth: 70vmax;
+    }
+
+    @include bp.media-up("Large") {
+        --containerWidth: 76rem;
+    }
+
+    @include bp.media-up("Medium") {
+        --containerWidth: 90vmax;
+    }
+
+    @include bp.media-up("XSmall") {
+        --containerWidth: 90vmin;
+    }
 
     @include bp.media-up("Small") {
         --sloganHeight: 12vmin;
@@ -37,36 +52,27 @@ $containerWidth: 80vw;
     }
 
     &__container {
-        width: $containerWidth;
-        height: 50vh;
+        width: var(--containerWidth);
+        height: 100vh;
         //height: $containerHeight;
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        bottom: 20vh;
-        left: 10vw;
+        top: 0;
+        left: calc((100% - (var(--containerWidth))) / 2);
         // transform: translate(-50%, -50%);
         //border-left: 0.05rem dashed rgba(#646cff, 70%);
         //border-right: 0.05rem dashed rgba(#646cff, 70%);
         overflow: hidden;
         z-index: 10;
     }
-
-    @include bp.media-up("Small") {
-
-        &__container {
-            width: 90vmin;
-            left: 5vmin;
-            bottom: 13vmax;
-        }
-    }
 }
 
 #dayCulture2026 {
 
     &Back {
-        // width: calc(#{$containerWidth} + 50vmin);
+        // width: calc(#{--containerWidth} + 50vmin);
         width: 100vw;
         height: 100vh;
         display: block;
@@ -120,7 +126,7 @@ $containerWidth: 80vw;
         display: block;
         position: absolute;
         bottom: 5vmin;
-        right: 15vmin;
+        right: 0;
         overflow: hidden;
         z-index: 5;
 
@@ -140,7 +146,7 @@ $containerWidth: 80vw;
         display: block;
         position: absolute;
         bottom: 5vmin;
-        left: 15vmin;
+        left: 0;
         overflow: hidden;
         z-index: 5;
 
@@ -154,69 +160,26 @@ $containerWidth: 80vw;
         }
     }
 
-    @include bp.media-up("XXLarge") {
-        #womanDay26 {
+    @include bp.media-up("XXLarge") {}
 
-            &Baloon {
-                right: 30vmin;
-            }
-        }
-    }
+    @include bp.media-up("XLarge") {}
 
-    @include bp.media-up("XLarge") {
-        #womanDay26 {
+    @include bp.media-up("Large") {}
 
-            &Baloon {
-                right: 25vmin;
-            }
-        }
-    }
+    @include bp.media-up("Medium") {}
 
-    @include bp.media-up("Large") {
-        #womanDay26 {
-
-            &Baloon {
-                right: 16vmin;
-            }
-        }
-    }
-
-    @include bp.media-up("Medium") {
-        #womanDay26 {
-
-            &Baloon {
-                right: 22vmin;
-            }
-
-            &Slogan {
-                &_1 {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
+    @include bp.media-up("XSmall") {
+        &Slogan {
+            width: 90vmin;
+            top: 15vmin;
         }
     }
 
     @include bp.media-up("Small") {
-        #womanDay26 {
 
-            &Baloon {
-                height: 90vmin;
-                top: 15vmin;
-                right: 16vmin;
-            }
-
-            &Slogan {
-                &_1 {
-                    // height: calc(#{var(--sloganHeight)} - 1.9vmin);
-                    width: 100%;
-                    text-align: center;
-                }
-
-                // &_2 {
-                //     height: calc(#{var(--sloganHeight)} - 1.8vmin);
-                // }
-            }
+        &Slogan {
+            width: 90vmin;
+            top: 30vmin;
         }
     }
 

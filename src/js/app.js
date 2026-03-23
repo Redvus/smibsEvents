@@ -1,11 +1,12 @@
 import "/scss/main.scss";
-import { Event_08_03_26 } from "./Event_08_03_26.js";
+// import { Event_08_03_26 } from "./Event_08_03_26.js";
 // import { Event_08_03_25 } from "./Event_08_03_25.js";
+import { Event_25_03_26 } from "./Event_25_03_26.js";
 
 class Plugins {
     constructor() {
         // this.initLayout();
-        new Event_08_03_26();
+        new Event_25_03_26();
         // new Event_08_03_25();
     }
 

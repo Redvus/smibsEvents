@@ -1,0 +1,76 @@
+Saving file './webp/dayCulture2026Back.webp'
+File:      dayCulture2026Back.jpg
+Dimension: 1920 x 1280
+Output:    188102 bytes Y-U-V-All-PSNR 38.85 42.72 43.61   39.87 dB
+           (0.61 bpp)
+block count:  intra4:       8073  (84.09%)
+              intra16:      1527  (15.91%)
+              skipped:         0  (0.00%)
+bytes used:  header:            363  (0.2%)
+             mode-partition:  31176  (16.6%)
+ Residuals bytes  |segment 1|segment 2|segment 3|segment 4|  total
+    macroblocks:  |       7%|      19%|      36%|      38%|    9600
+      quantizer:  |      39 |      35 |      28 |      21 |
+   filter level:  |      11 |       7 |       5 |       9 |
+libpng warning: iCCP: known incorrect sRGB profile
+Saving file './webp/dayCulture2026_2.webp'
+File:      dayCulture2026_2.png
+Dimension: 438 x 571 (with alpha)
+Output:    53620 bytes Y-U-V-All-PSNR 39.83 41.13 41.84   40.31 dB
+           (1.72 bpp)
+block count:  intra4:        522  (51.79%)
+              intra16:       486  (48.21%)
+              skipped:        34  (3.37%)
+bytes used:  header:            191  (0.4%)
+             mode-partition:   2690  (5.0%)
+             transparency:    36119 (99.0 dB)
+ Residuals bytes  |segment 1|segment 2|segment 3|segment 4|  total
+    macroblocks:  |       5%|      17%|      32%|      46%|    1008
+      quantizer:  |      39 |      36 |      29 |      22 |
+   filter level:  |      11 |       8 |       5 |      10 |
+Lossless-alpha compressed size: 36118 bytes
+  * Header size: 605 bytes, image data size: 35513
+  * Lossless features used: PREDICTION
+  * Precision Bits: histogram=5 transform=5 cache=10
+  * Palette size:   209
+libpng warning: iCCP: known incorrect sRGB profile
+Saving file './webp/dayCulture2026_1.webp'
+File:      dayCulture2026_1.png
+Dimension: 508 x 573 (with alpha)
+Output:    68552 bytes Y-U-V-All-PSNR 39.04 41.27 41.52   39.69 dB
+           (1.88 bpp)
+block count:  intra4:        671  (58.25%)
+              intra16:       481  (41.75%)
+              skipped:        26  (2.26%)
+bytes used:  header:            184  (0.3%)
+             mode-partition:   3415  (5.0%)
+             transparency:    43672 (99.0 dB)
+ Residuals bytes  |segment 1|segment 2|segment 3|segment 4|  total
+    macroblocks:  |       6%|      15%|      38%|      41%|    1152
+      quantizer:  |      39 |      35 |      28 |      22 |
+   filter level:  |      11 |       7 |      63 |      10 |
+Lossless-alpha compressed size: 43671 bytes
+  * Header size: 306 bytes, image data size: 43365
+  * Lossless features used: PALETTE
+  * Precision Bits: histogram=5 transform=5 cache=0
+  * Palette size:   209
+Saving file './webp/dayCulture2026Slogan.webp'
+File:      dayCulture2026Slogan.png
+Dimension: 581 x 451 (with alpha)
+Output:    88396 bytes Y-U-V-All-PSNR 40.07 39.21 39.75   39.86 dB
+           (2.70 bpp)
+block count:  intra4:        517  (48.18%)
+              intra16:       556  (51.82%)
+              skipped:       112  (10.44%)
+bytes used:  header:            292  (0.3%)
+             mode-partition:   2746  (3.1%)
+             transparency:    63780 (99.0 dB)
+ Residuals bytes  |segment 1|segment 2|segment 3|segment 4|  total
+    macroblocks:  |       5%|      16%|      18%|      61%|    1073
+      quantizer:  |      39 |      37 |      32 |      23 |
+   filter level:  |      11 |       8 |      20 |      15 |
+Lossless-alpha compressed size: 63779 bytes
+  * Header size: 612 bytes, image data size: 63167
+  * Lossless features used: PREDICTION
+  * Precision Bits: histogram=5 transform=5 cache=9
+  * Palette size:   256
