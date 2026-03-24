@@ -42,15 +42,6 @@
     //display: none;
     z-index: 10;
 
-    &--womanDay26 {
-        display: block;
-        background-color: var(--third) !important;
-        //background-color: #d287a0 !important;
-        opacity: 0;
-        visibility: hidden;
-        z-index: -1;
-    }
-
     &__container {
         width: var(--containerWidth);
         height: 100vh;
@@ -122,7 +113,7 @@
 
     &_1 {
         // width: 100%;
-        height: 65vmin;
+        height: 75vmin;
         display: block;
         position: absolute;
         bottom: 5vmin;
@@ -142,7 +133,7 @@
 
     &_2 {
         // width: 100%;
-        height: 65vmin;
+        height: 75vmin;
         display: block;
         position: absolute;
         bottom: 5vmin;
@@ -166,12 +157,28 @@
 
     @include bp.media-up("Large") {}
 
-    @include bp.media-up("Medium") {}
+    @include bp.media-up("Medium") {
+        &_1 {
+            height: 80vmin;
+        }
+
+        &_2 {
+            height: 80vmin;
+        }
+    }
 
     @include bp.media-up("XSmall") {
         &Slogan {
             width: 90vmin;
             top: 15vmin;
+        }
+
+        &_1 {
+            bottom: 5vmax;
+        }
+
+        &_2 {
+            bottom: 5vmax;
         }
     }
 
@@ -179,7 +186,19 @@
 
         &Slogan {
             width: 90vmin;
-            top: 30vmin;
+            top: 5vmin;
+        }
+
+        &_1 {
+            height: 100vmin;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        &_2 {
+            height: 90vmin;
+            bottom: 40vmin;
+            z-index: 1;
         }
     }
 
