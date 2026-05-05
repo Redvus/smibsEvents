@@ -2,7 +2,7 @@
 
 $breakpoints: (
     "Small": 576px,
-    "XSmall": 850px,
+    "XSmall": 1024px,
     "Medium": 1366px,
     "Large": 1680px,
     "XLarge": 1920px,
@@ -16,11 +16,14 @@ $breakpoints: (
 
 @mixin media-up($key) {
     $size: breakpoint($key);
-    @if $size != 0 {
+
+    @if $size !=0 {
         @media (max-width: $size) {
             @content;
         }
-    } @else {
+    }
+
+    @else {
         @content;
     }
 }
